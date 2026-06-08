@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Gluten-free bestie</title>
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
     <div class="body-container">
       <h1>Your Gluten-free bestie</h1>
       <h2>Search for safe Gluten-free places in town</h2>
-      <script src="src/index.js"></script>
+
       <main>
-        <form class="search-container">
+        <form class="search-container" id="city-name">
           <input
             class="search-field"
+            id="search-input"
             type="text"
             placeholder="Enter a city/town name..."
             required
             autofocus
           />
           <input class="search-button" type="submit" value="Search" />
-          <p>Your search will show here...</p>
+          <p id="result">Your search will show here...</p>
         </form>
       </main>
       <footer>
@@ -50,5 +52,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
