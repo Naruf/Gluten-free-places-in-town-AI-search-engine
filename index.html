@@ -7,8 +7,48 @@
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <h1>Your Gluten-free bestie</h1>
-    <h2>Search for safe Gluten-free places in town</h2>
-    <script src="src/index.js"></script>
+    <div class="body-container">
+      <h1>Your Gluten-free bestie</h1>
+      <h2>Search for safe Gluten-free places in town</h2>
+      <script src="src/index.js"></script>
+      <main>
+        <form class="search-container">
+          <input
+            class="search-field"
+            type="text"
+            placeholder="Enter a city/town name..."
+            required
+            autofocus
+          />
+          <input class="search-button" type="submit" value="Search" />
+          <p>Your search will show here...</p>
+        </form>
+      </main>
+      <footer>
+        AI project coded by
+        <span
+          ><a href="https://github.com/Naruf" target="_blank" class="links"
+            >Nadia Ruiz</a
+          ></span
+        >, is open-sourced on
+        <span
+          ><a
+            href="https://github.com/Naruf/Gluten-free-places-in-town-AI-search-engine"
+            target="_blank"
+            class="links"
+            >Github</a
+          ></span
+        >
+        and hosted on
+        <span
+          ><a
+            href="https://gluten-free-places-in-town-ai-searc.vercel.app/"
+            target="_blank"
+            class="links"
+            >Vercel</a
+          ></span
+        >
+      </footer>
+    </div>
   </body>
 </html>
